@@ -4,13 +4,11 @@ require ('dotenv').config({path:'.env'})
 const { signUpErrors, signInErrors } = require('../errors');
 
 
-
 const createToken = (id) => {
   return jwt.sign({id}, process.env.APP_SECRET, {
     expiresIn: '24h'
   })
 };
-
 
 module.exports.signUp = async (req, res) => {
   

@@ -2,9 +2,7 @@ const mongoose = require ("mongoose");
 const { Schema, model } = mongoose;
 const crypto = require("crypto");
 
-
-
-const secret = "Thisisacompanysecret ";
+const secret = "Thisisacompanysecret0";
 // const sha256Hasher = crypto.createHmac("sha256", secret);
 // const hash = sha256Hasher.update(this.password);
 
@@ -47,7 +45,6 @@ userSchema.statics.login = async function(email, password) {
   // }
   throw Error('incorrect email')
 };
-
 
 
 const ProductModel = model("user", userSchema);

@@ -48,7 +48,7 @@ router.get("/", (req, res) => {
     res.send(`
     <form class="ui form" name="inscription" method="get" action="/logout">
 
-      <h2>SALUT</h2>
+      <h2>dashboard</h2>
     
     <button class="ui button" type="submit">logout</button>
 
